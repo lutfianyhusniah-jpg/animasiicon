@@ -1,0 +1,94 @@
+body{
+
+margin:0;
+background:#ede491;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+
+}
+
+.container{
+
+width:90%;
+display:grid;
+grid-template-columns:repeat(5,1fr);
+gap:40px 40px;
+justify-items:center;
+
+}
+
+img{
+
+width:100px;
+
+}
+
+.hand-container{
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+
+.money{
+    width: 100px;
+}
+
+.coin{
+    position: absolute;
+    width: 90px;
+
+    top: 165px;      /* naik atau turun */
+    left: 365px;    /* geser kanan atau kiri */
+
+}
+
+.loc{
+    position: absolute;
+    width: 90px;
+
+    top: 160px;      /* naik atau turun */
+    left: 1067px;    /* geser kanan atau kiri */
+
+}
+
+.ceklis{
+    position: absolute;
+    width: 90px;
+
+    top: 317px;      /* naik atau turun */
+    left: 118px;    /* geser kanan atau kiri */
+}
+
+.paket{
+    position: absolute;
+    width: 90px;
+
+    top: 323px;      /* naik atau turun */
+    left: 357px;    /* geser kanan atau kiri */
+}
+
+.luc{
+    position: absolute;
+    width: 90px;
+
+    top: 317px;      /* naik atau turun */
+    left: 598px;    /* geser kanan atau kiri */
+}
+
+.air{
+    position: absolute;
+    width: 90px;
+
+    top: 321px;      /* naik atau turun */
+    left: 826px;    /* geser kanan atau kiri */
+}
+
+.tulisan{
+    position: absolute;
+    width: 90px;
+
+    top: 317px;      /* naik atau turun */
+    left: 1062px;    /* geser kanan atau kiri */
+}
