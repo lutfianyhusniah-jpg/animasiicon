@@ -1,56 +1,92 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Animasi Icon</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="style.css">
+    <title>Animasi Icon</title>
 
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/gsap.min.js" integrity="sha512-Qrpii3NEFZ02RN6ZqpTu6pS/5PEq7EzBYJLki3AKBd8IncrlAwQdZHzExYwS0+b1NM0/qfxI1GOhqWLVosocDA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
-<div class="container">
+    <div class="container">
 
-<img src="image/Artboard 1.svg" class="truck">
+        <!-- BARIS 1 -->
 
-<img src="image/Artboard 2.svg" class="money">
+        <!-- TRUCK -->
+        <div class="item truck-item">
+            <img src="image/Artboard 1.svg" class="truck">
+        </div>
 
-<img src="image/7.svg" class="coin">
+        <!-- TANGAN + UANG + KOIN -->
+        <div class="item money-item">
+            <img src="image/Artboard 2.svg" class="money">
+            <img src="image/7.svg" class="coin">
+        </div>
 
-<img src="image/Artboard 3.svg" class="calendar">
+        <!-- KALENDER -->
+        <div class="item">
+            <img src="image/Artboard 3.svg" class="calendar">
+        </div>
 
-<img src="image/Artboard 4.svg" class="plane">
+        <!-- PESAWAT -->
+        <div class="item">
+            <img src="image/Artboard 4.svg" class="plane">
+        </div>
 
-<img src="image/Artboard 5.svg" class="location">
+        <!-- LOKASI + ICON -->
+        <div class="item location-item">
+            <img src="image/Artboard 5.svg" class="location">
+            <img src="image/5.svg" class="loc">
+        </div>
 
-<img src="image/5.svg" class="loc">
 
-<img src="image/Artboard 6.svg" class="box">
+        <!-- BARIS 2 -->
 
-<img src="image/6.svg" class="ceklis">
+        <!-- BOX + CEKLIS -->
+        <div class="item box-item">
+            <img src="image/Artboard 6.svg" class="box">
+            <img src="image/6.svg" class="ceklis">
+        </div>
 
-<img src="image/Artboard 7.svg" class="courier">
+        <!-- COURIER + PAKET -->
+        <div class="item courier-item">
+            <img src="image/Artboard 7.svg" class="courier">
+            <img src="image/2.svg" class="paket">
+        </div>
 
-<img src="image/2.svg" class="paket">
+        <!-- GLOBE + BULAN -->
+        <div class="item globe-item">
+            <img src="image/Artboard 8.svg" class="globe">
+            <img src="image/4.svg" class="luc">
+        </div>
 
-<img src="image/Artboard 8.svg" class="globe">
+        <!-- KAPAL + AIR -->
+        <div class="item ship-item">
+            <img src="image/Artboard 9.svg" class="ship">
+            <img src="image/9.svg" class="air">
+        </div>
 
-<img src="image/4.svg" class="luc">
+        <!-- DOKUMEN + TULISAN -->
+        <div class="item document-item">
+            <img src="image/Artboard 10.svg" class="document">
+            <img src="image/10.svg" class="tulisan">
+        </div>
 
-<img src="image/Artboard 9.svg" class="ship">
+    </div>
 
-<img src="image/9.svg" class="air">
 
-<img src="image/Artboard 10.svg" class="document">
+    <!-- GSAP -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/gsap.min.js"
+        integrity="sha512-Qrpii3NEFZ02RN6ZqpTu6pS/5PEq7EzBYJLki3AKBd8IncrlAwQdZHzExYwS0+b1NM0/qfx1I1GOhqWLVosocDA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer">
+    </script>
 
-<img src="image/10.svg" class="tulisan">
-
-</div>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
