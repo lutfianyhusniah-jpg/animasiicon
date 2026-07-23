@@ -4,97 +4,213 @@
 
 body {
     margin: 0;
+
     background: #ede491;
+
+    min-height: 100vh;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+
     overflow: hidden;
 }
 
-/* Tempat semua icon */
+
+/* CONTAINER UTAMA */
+
 .container {
-    width: 90%;
-    max-width: 1300px;
+    width: min(90vw, 1200px);
 
     display: grid;
+
     grid-template-columns: repeat(5, 1fr);
-    gap: 70px 70px;
+
+    gap: 70px 60px;
 
     justify-items: center;
     align-items: center;
 }
 
-/* Icon utama */
-.container > img {
+
+/* SETIAP KELOMPOK IKON */
+
+.item {
+    position: relative;
+
+    width: 120px;
+    height: 120px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* SEMUA GAMBAR UTAMA */
+
+.item > img {
     width: 100px;
+
     height: 100px;
+
     object-fit: contain;
 }
 
+
 /* =========================
-   ICON TAMBAHAN
+   KOIN + TANGAN
 ========================= */
 
-/* KOIN DI ATAS TANGAN */
 .coin {
     position: absolute;
-    width: 90px !important;
 
-    top: calc(50% - 275px);
-    left: calc(50% - 285px);
+    width: 90px !important;
+    height: 90px !important;
+
+    top: -38px;
+    left: 15px;
+
+    z-index: 2;
 }
 
-/* LOKASI DI ATAS PAKET */
+
+/* =========================
+   LOKASI + ICON
+========================= */
+
 .loc {
     position: absolute;
-    width: 90px !important;
 
-    top: calc(50% - 280px);
-    left: calc(50% + 420px);
+    width: 90px !important;
+    height: 90px !important;
+
+    top: -38px;
+    left: 15px;
+
+    z-index: 2;
 }
 
-/* CEKLIS DI DALAM KOTAK */
+
+/* =========================
+   BOX + CEKLIS
+========================= */
+
 .ceklis {
     position: absolute;
-    width: 90px !important;
 
-    top: calc(50% - 120px);
-    left: calc(50% - 530px);
+    width: 90px !important;
+    height: 90px !important;
+
+    top: 5px;
+    left: 15px;
+
+    z-index: 2;
 }
 
-/* PAKET */
+
+/* =========================
+   COURIER + PAKET
+========================= */
+
 .paket {
     position: absolute;
-    width: 90px !important;
 
-    top: calc(50% - 115px);
-    left: calc(50% - 290px);
+    width: 90px !important;
+    height: 90px !important;
+
+    top: -5px;
+    left: 15px;
+
+    z-index: 2;
 }
 
-/* BULAN DI GLOBE */
+
+/* =========================
+   GLOBE + BULAN
+========================= */
+
 .luc {
     position: absolute;
-    width: 90px !important;
 
-    top: calc(50% - 120px);
-    left: calc(50% - 50px);
+    width: 90px !important;
+    height: 90px !important;
+
+    top: -5px;
+    left: 15px;
+
+    z-index: 2;
 }
 
-/* AIR DI BAWAH KAPAL */
+
+/* =========================
+   KAPAL + AIR
+========================= */
+
 .air {
     position: absolute;
-    width: 90px !important;
 
-    top: calc(50% - 115px);
-    left: calc(50% + 180px);
+    width: 90px !important;
+    height: 90px !important;
+
+    top: 15px;
+    left: 15px;
+
+    z-index: 2;
 }
 
-/* TULISAN DI DOKUMEN */
+
+/* =========================
+   DOKUMEN + TULISAN
+========================= */
+
 .tulisan {
     position: absolute;
-    width: 90px !important;
 
-    top: calc(50% - 120px);
-    left: calc(50% + 415px);
+    width: 90px !important;
+    height: 90px !important;
+
+    top: 5px;
+    left: 15px;
+
+    z-index: 2;
+}
+
+
+/* =========================
+   RESPONSIVE HP
+========================= */
+
+@media (max-width: 700px) {
+
+    .container {
+        width: 95vw;
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 35px 20px;
+    }
+
+    .item {
+        width: 100px;
+        height: 100px;
+    }
+
+    .item > img {
+        width: 85px;
+        height: 85px;
+    }
+
+    .coin,
+    .loc,
+    .ceklis,
+    .paket,
+    .luc,
+    .air,
+    .tulisan {
+        width: 75px !important;
+        height: 75px !important;
+    }
+
 }
