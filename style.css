@@ -1,94 +1,100 @@
-body{
-
-margin:0;
-background:#ede491;
-display:flex;
-justify-content:center;
-align-items:center;
-height:100vh;
-
+* {
+    box-sizing: border-box;
 }
 
-.container{
-
-width:90%;
-display:grid;
-grid-template-columns:repeat(5,1fr);
-gap:40px 40px;
-justify-items:center;
-
+body {
+    margin: 0;
+    background: #ede491;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
 }
 
-img{
+/* Tempat semua icon */
+.container {
+    width: 90%;
+    max-width: 1300px;
 
-width:100px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 70px 70px;
 
+    justify-items: center;
+    align-items: center;
 }
 
-.hand-container{
-    position: relative;
-    width: 120px;
-    height: 120px;
-}
-
-.money{
+/* Icon utama */
+.container > img {
     width: 100px;
+    height: 100px;
+    object-fit: contain;
 }
 
-.coin{
+/* =========================
+   ICON TAMBAHAN
+========================= */
+
+/* KOIN DI ATAS TANGAN */
+.coin {
     position: absolute;
-    width: 90px;
+    width: 90px !important;
 
-    top: 165px;      /* naik atau turun */
-    left: 365px;    /* geser kanan atau kiri */
-
+    top: calc(50% - 275px);
+    left: calc(50% - 285px);
 }
 
-.loc{
+/* LOKASI DI ATAS PAKET */
+.loc {
     position: absolute;
-    width: 90px;
+    width: 90px !important;
 
-    top: 160px;      /* naik atau turun */
-    left: 1067px;    /* geser kanan atau kiri */
-
+    top: calc(50% - 280px);
+    left: calc(50% + 420px);
 }
 
-.ceklis{
+/* CEKLIS DI DALAM KOTAK */
+.ceklis {
     position: absolute;
-    width: 90px;
+    width: 90px !important;
 
-    top: 317px;      /* naik atau turun */
-    left: 118px;    /* geser kanan atau kiri */
+    top: calc(50% - 120px);
+    left: calc(50% - 530px);
 }
 
-.paket{
+/* PAKET */
+.paket {
     position: absolute;
-    width: 90px;
+    width: 90px !important;
 
-    top: 323px;      /* naik atau turun */
-    left: 357px;    /* geser kanan atau kiri */
+    top: calc(50% - 115px);
+    left: calc(50% - 290px);
 }
 
-.luc{
+/* BULAN DI GLOBE */
+.luc {
     position: absolute;
-    width: 90px;
+    width: 90px !important;
 
-    top: 317px;      /* naik atau turun */
-    left: 598px;    /* geser kanan atau kiri */
+    top: calc(50% - 120px);
+    left: calc(50% - 50px);
 }
 
-.air{
+/* AIR DI BAWAH KAPAL */
+.air {
     position: absolute;
-    width: 90px;
+    width: 90px !important;
 
-    top: 321px;      /* naik atau turun */
-    left: 826px;    /* geser kanan atau kiri */
+    top: calc(50% - 115px);
+    left: calc(50% + 180px);
 }
 
-.tulisan{
+/* TULISAN DI DOKUMEN */
+.tulisan {
     position: absolute;
-    width: 90px;
+    width: 90px !important;
 
-    top: 317px;      /* naik atau turun */
-    left: 1062px;    /* geser kanan atau kiri */
+    top: calc(50% - 120px);
+    left: calc(50% + 415px);
 }
