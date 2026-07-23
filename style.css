@@ -1,216 +1,94 @@
-* {
-    box-sizing: border-box;
+body{
+
+margin:0;
+background:#ede491;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+
 }
 
-body {
-    margin: 0;
+.container{
 
-    background: #ede491;
+width:90%;
+display:grid;
+grid-template-columns:repeat(5,1fr);
+gap:40px 40px;
+justify-items:center;
 
-    min-height: 100vh;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    overflow: hidden;
 }
 
+img{
 
-/* CONTAINER UTAMA */
+width:100px;
 
-.container {
-    width: min(90vw, 1200px);
-
-    display: grid;
-
-    grid-template-columns: repeat(5, 1fr);
-
-    gap: 70px 60px;
-
-    justify-items: center;
-    align-items: center;
 }
 
-
-/* SETIAP KELOMPOK IKON */
-
-.item {
+.hand-container{
     position: relative;
-
     width: 120px;
     height: 120px;
-
-    display: flex;
-
-    justify-content: center;
-    align-items: center;
 }
 
-
-/* SEMUA GAMBAR UTAMA */
-
-.item > img {
+.money{
     width: 100px;
-
-    height: 100px;
-
-    object-fit: contain;
 }
 
-
-/* =========================
-   KOIN + TANGAN
-========================= */
-
-.coin {
+.coin{
     position: absolute;
+    width: 90px;
 
-    width: 90px !important;
-    height: 90px !important;
+    top: 165px;      /* naik atau turun */
+    left: 365px;    /* geser kanan atau kiri */
 
-    top: -38px;
-    left: 15px;
-
-    z-index: 2;
 }
 
-
-/* =========================
-   LOKASI + ICON
-========================= */
-
-.loc {
+.loc{
     position: absolute;
+    width: 90px;
 
-    width: 90px !important;
-    height: 90px !important;
+    top: 160px;      /* naik atau turun */
+    left: 1067px;    /* geser kanan atau kiri */
 
-    top: -38px;
-    left: 15px;
-
-    z-index: 2;
 }
 
-
-/* =========================
-   BOX + CEKLIS
-========================= */
-
-.ceklis {
+.ceklis{
     position: absolute;
+    width: 90px;
 
-    width: 90px !important;
-    height: 90px !important;
-
-    top: 5px;
-    left: 15px;
-
-    z-index: 2;
+    top: 317px;      /* naik atau turun */
+    left: 118px;    /* geser kanan atau kiri */
 }
 
-
-/* =========================
-   COURIER + PAKET
-========================= */
-
-.paket {
+.paket{
     position: absolute;
+    width: 90px;
 
-    width: 90px !important;
-    height: 90px !important;
-
-    top: -5px;
-    left: 15px;
-
-    z-index: 2;
+    top: 323px;      /* naik atau turun */
+    left: 357px;    /* geser kanan atau kiri */
 }
 
-
-/* =========================
-   GLOBE + BULAN
-========================= */
-
-.luc {
+.luc{
     position: absolute;
+    width: 90px;
 
-    width: 90px !important;
-    height: 90px !important;
-
-    top: -5px;
-    left: 15px;
-
-    z-index: 2;
+    top: 317px;      /* naik atau turun */
+    left: 598px;    /* geser kanan atau kiri */
 }
 
-
-/* =========================
-   KAPAL + AIR
-========================= */
-
-.air {
+.air{
     position: absolute;
+    width: 90px;
 
-    width: 90px !important;
-    height: 90px !important;
-
-    top: 15px;
-    left: 15px;
-
-    z-index: 2;
+    top: 321px;      /* naik atau turun */
+    left: 826px;    /* geser kanan atau kiri */
 }
 
-
-/* =========================
-   DOKUMEN + TULISAN
-========================= */
-
-.tulisan {
+.tulisan{
     position: absolute;
+    width: 90px;
 
-    width: 90px !important;
-    height: 90px !important;
-
-    top: 5px;
-    left: 15px;
-
-    z-index: 2;
-}
-
-
-/* =========================
-   RESPONSIVE HP
-========================= */
-
-@media (max-width: 700px) {
-
-    .container {
-        width: 95vw;
-
-        grid-template-columns: repeat(2, 1fr);
-
-        gap: 35px 20px;
-    }
-
-    .item {
-        width: 100px;
-        height: 100px;
-    }
-
-    .item > img {
-        width: 85px;
-        height: 85px;
-    }
-
-    .coin,
-    .loc,
-    .ceklis,
-    .paket,
-    .luc,
-    .air,
-    .tulisan {
-        width: 75px !important;
-        height: 75px !important;
-    }
-
+    top: 317px;      /* naik atau turun */
+    left: 1062px;    /* geser kanan atau kiri */
 }
